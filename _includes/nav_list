@@ -52,6 +52,7 @@
           </ul>
         {% endfor %}
 
+        <span class="nav__sub-title" v-on:click='togglec()'><a href="{{ '/categories/기술리뷰/' | relative_url }}">🔧 기술리뷰 ({{ site.categories['기술리뷰'].size }})</a></span>
         <span class="nav__sub-title" v-on:click='togglec()'><a href="/categories/프로그래밍">💻 구현 / 프로그래밍 ({{ site.categories['프로그래밍'].size }})</a></span>
         <span class="nav__sub-title" v-on:click='togglec()'><a href="/categories/공부">📒 공부 ({{ site.categories['공부'].size }})</a></span>
         <!-- <span class="nav__sub-title" v-on:click='togglec()'><a href="/categories/AI소식">🔥 AI소식 ({{ site.categories['AI소식'].size }})</a></span> -->
